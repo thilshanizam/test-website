@@ -2,6 +2,9 @@
 <html>
 <head>
 	<title>My First Website</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     	<style>
 		html {
     		scroll-behavior: smooth;
@@ -95,8 +98,39 @@
 		button:hover {
    	 	background-color: #1a252f;
 		}
+
+		@media (max-width: 768px) {
+    			nav {
+        		padding: 15px 20px;
+    			}
+
+   			nav ul {
+        		gap: 10px;
+        		font-size: 14px;
+    			}
+
+    			h1 {
+        		font-size: 36px;
+    			}
+
+    			p {
+        		font-size: 18px;
+    			}
+
+    			section {
+        		padding: 25px;
+        		max-width: 90%;
+    			}
+
+    			button {
+        		width: 100%;
+        		max-width: 220px;
+    			}
+		}
+
     	</style>
 </head>
+
 <body>
     	<nav>
     		<h3>My Website</h3>
